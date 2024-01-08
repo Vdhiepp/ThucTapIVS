@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.product ul li{
+    list-style: none;
+}
+.product a{
+    color: #333;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    min-height: 800px;
+    max-height: 1200px;
+    align-items: center;
+    background: linear-gradient(72deg, #2a98ff, #7360f0, #dc236a, #bc0bae);
+}
+.content-left{
+    text-align: center;
+    font-size: 20px;
+    width: 45%;
+}
+.content-left h1{
+    font-weight: bolder;
+    font-size: 80px;
+    margin: 20px 0px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.content-left p{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.content-left ul li{
+    margin: 30px 0px;
+    font-weight: bolder;
+}
+.content-left a{
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+.content-right{
+    font-size: 20px;
+    background: linear-gradient(144deg, #e7e9eb 70%, #c4b0b0);
+    background-color: #e7e9eb;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-right: 50px;
+    width: 45%;
+    border-radius: 20px;
+}
+.box{
+    background-color: #fff;
+    border-left: 10px solid #047c50;
+    margin: 20px 0px;
+    min-height: 350px;
+}
+.btn a{
+    background-color: #047c50;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.btn a:hover{
+    background: #034c31;
+}
+.content-left ul li:hover{
+    animation: animateBg 5s linear infinite;
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

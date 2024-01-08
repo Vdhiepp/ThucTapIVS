@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CodingLab</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='product.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='services.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav_logo">
+                <a href="#" id="button-logo">CodingLab</a>
+            </div>
+            <div class="nav_item">
+                <a href="#" id="button-hom">Home</a>
+                <a href="#pro" id="button-pro">Product</a>
+                <a href="#ser" id="button-ser">Services</a>
+                <a href="#con" id="button-con">Contact</a>
+                <button class="nav_btn" id="loginButton"><a href="#">Login</a></button>
+            </div>
+        </nav>
+    </header>
+    <p id="slogan">Chào mừng bạn đã đến với CodingLab</p>
+
+    <main>
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div>
+                <button id="closeButton"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <p class="title">Login</p>
+            <div class="form-input">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-input">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="check">
+                <div>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <div><a href="#" style="color: #4800a6;">Forgot password?</a></div>
+            </div>
+            <div class="login-btn">
+                <button type="submit">Login Now</button>
+            </div>
+            <div class="text">
+                Don't have an account? <a href="#" id="signupButton">Signup Now</a>
+            </div>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signupForm">
+            <p class="title">Sign Up</p>
+            <div class="form-input">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-input">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-input">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="login-btn">
+                <button type="submit">Signup Now</button>
+            </div>
+            <div class="text">Already Have An Account? <a href="#" id="signinButton">Sign In</a>
+            </div>
+        </form>
+
+        <!-- Backgound mờ -->
+        <div class="overlay"></div>
+
+    </main>
+
+    <div class="product" id="pro">
+        <div class="content-left">
+            <h1>HTML</h1>
+            <p>The language for building web pages</p>
+            <ul>
+                <li><a href="#pro" style="background: linear-gradient(72deg, #000000, #2131e9); color: #fff;">Learn
+                        HTML</a></li>
+                <li><a href="#pro" style="background: linear-gradient(72deg, #ffffff, #55c2f5);">Video Tutorial</a></li>
+                <li><a href="#pro" style="background: linear-gradient(72deg, #000000, #2131e9); color: #fff;">HTML
+                        Reference</a></li>
+                <li><a href="#pro" style="background: linear-gradient(72deg, #ffffff, #55c2f5);">Get Certified</a></li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <h3>HTML Example</h3>
+            <div class="box">
+                <ul>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">!DOCTYPE </span><span
+                            style="color: red;">&ensp;html</span><span style="color: blue;">&gt;</span></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">html</span><span
+                            style="color: blue;">&gt;</span></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">title</span><span
+                            style="color: blue;">&gt;</span> HTML Tutorial <span style="color: blue;">&lt;</span><span
+                            style="color: brown;">/title</span><span style="color: blue;">&gt;</span></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">body</span><span
+                            style="color: blue;">&gt;</span></li>
+                    <li><br></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">title</span><span
+                            style="color: blue;">&gt;</span> This is a heading <span
+                            style="color: blue;">&lt;</span><span style="color: brown;">/title</span><span
+                            style="color: blue;">&gt;</span></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">title</span><span
+                            style="color: blue;">&gt;</span> This is a paragraph <span
+                            style="color: blue;">&lt;</span><span style="color: brown;">/title</span><span
+                            style="color: blue;">&gt;</span></li>
+                    <li><br></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">/body</span><span
+                            style="color: blue;">&gt;</span></li>
+                    <li><span style="color: blue;">&lt;</span><span style="color: brown;">/html</span><span
+                            style="color: blue;">&gt;</span></li>
+                </ul>
+            </div>
+            <div class="btn"><a href="#pro">Try it Yourself</a></div>
+        </div>
+    </div>
+
+    <div class="services" id="ser">
+        <div class="card-full">
+            <div class="card" style="background-color:#227dd3;">
+                <div>
+                    <h1>PHP</h1>
+                    <p>A web sever programming language</p>
+                    <a href="#ser">Learn PHP</a>
+                </div>
+            </div>
+            <div class="card" style="background-color:#7360f0;">
+                <div>
+                    <h1>jQuery</h1>
+                    <p>A JS library for developing web pages</p>
+                    <a href="#ser">Learn jQuery</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-full">
+            <div class="card" style="background-color:#ca306b;">
+                <div>
+                    <h1>Java</h1>
+                    <p>A programming language</p>
+                    <a href="#ser">Learn Java</a>
+                </div>
+            </div>
+            <div class="card" style="background-color:#bc0bae;">
+                <div>
+                    <h1>Bootstrap</h1>
+                    <p>A CSS framework for designing better web pages</p>
+                    <a href="#ser">Learn Bootstrap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="con">
+        <div class="contact-info">
+            <div><i class="bi bi-geo-alt"></i> Mitech Center, Nha Trang City</div>
+            <div><i class="bi bi-envelope"></i>codinglab@gmail.com</div>
+            <div><i class="bi bi-telephone"></i>+84 914 068 311</div>
+            <div><i class="bi bi-calendar-check"></i>Mon - Fri 8:30 to 17:30 </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="" method="post">
+                <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                <textarea name="message" rows="8" cols="80"></textarea>
+                <input type="submit" name="submit" class="send-btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p style="text-align: center;">Copyright &#169; 2023 by <span>Võ Đại Hiệp</span></p>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script>
+        $(document).ready(function () {
+            var login = $('#loginForm');
+            var signup = $('#signupForm');
+            var slogan = $('#slogan');
+
+            login.hide(); // Ẩn form đăng nhập ban đầu
+            signup.hide(); // Ẩn form đăng ký ban đầu
+
+            // Nút Login
+            $('#loginButton').click(function () {
+                login.fadeIn();
+                slogan.fadeOut();
+                $('.overlay').fadeIn();
+            });
+
+            // Nút X
+            $('#closeButton').click(function () {
+                login.fadeOut();
+                $('.overlay').fadeOut();
+                slogan.slideDown(2000);
+            });
+
+            // Nút Signup 
+            $('#signupButton').click(function () {
+                login.fadeOut(0);
+                signup.fadeIn();
+            })
+
+            // Nút Signin
+            $('#signinButton').click(function () {
+                signup.fadeOut(0);
+                login.fadeIn();
+            })
+            $('#button-pro').click(function () {
+                slogan.fadeOut(0);
+            })
+            $('#button-ser').click(function () {
+                slogan.fadeOut(0);
+            })
+            $('#button-con').click(function () {
+                slogan.fadeOut(0);
+            })
+            $('#button-hom').click(function () {
+                slogan.slideDown();
+            })
+            $('#button-logo').click(function () {
+                slogan.slideDown();
+            })
+
+            var notification = $("#slogan");
+            var lastScrollTop = 0;
+
+            $(window).scroll(function () {
+                var scrollTop = $(this).scrollTop();
+
+                if (scrollTop == lastScrollTop) {
+                    notification.show();
+                    
+                    
+                } else {
+                    notification.hide();
+                }
+
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

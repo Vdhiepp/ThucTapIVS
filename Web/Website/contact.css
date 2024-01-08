@@ -1,0 +1,90 @@
+.contact{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(220, 198, 156, .3);
+    padding: 10px 150px;
+}
+.head-title{
+    background: rgba(220, 198, 156, .3);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#make-color{
+    background: linear-gradient(144deg, #2af1ff, #7360f0, #ff4089, #eff31c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animateBg 5s linear infinite;
+}
+.contact-card{
+    position: relative;
+    background: #fff;
+    max-width: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+.card-image{
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.card-image img{
+    max-height: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: animateBg 5s linear infinite;
+}
+.card-info{
+    position: relative;
+    color: #222;
+    padding: 20px;
+}
+.card-info h3{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card-info p{
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.card-info .card-mediaIcons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-info .card-mediaIcons a{
+    color: #999;
+    font-size: 1.4em;
+    margin: 0 10px;
+    background: #eee;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+}
+/* .card-info .card-mediaIcons a:hover{
+    color: #222;
+} */
+.face a:hover{
+    color: #365899;
+}
+.twit a:hover{
+    color: #1DA1F2;
+}
+.ins a:hover{
+    color: #E95950;
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

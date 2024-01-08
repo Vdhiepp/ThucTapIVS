@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+li{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 100%;
+    display: grid;  
+    grid-template-columns: 20% 80%;
+}
+/*-------------------------------- nav-menu --------------------------------------*/
+.nav__menu{
+    width: 20%;
+    height: 100%;
+    background-color: #040b15;
+    color:#fff; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+}
+.image{
+    text-align: center;
+    margin-top:30px;
+   
+}
+.image img{
+    width: 60%;
+    border: 10px solid #212531;
+    border-radius: 50%;
+}
+.navbar__list{
+    display: flex;
+    justify-content:space-evenly;
+}
+.navbar__list i{
+    font-size: 30px;
+}
+.navbar__item{
+    color:white;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 8px 10px;
+    background-color: #212531;
+    transition: 0.3s;
+}
+.navbar__item:hover{
+   color:black;
+   background-color: white;
+}
+/*-------------------------------- sidebar__list --------------------------------------*/
+.sidebar__list{
+    margin: 30px 20px;
+    line-height: 50px;
+}
+.sidebar__item{
+    color:white;
+    font-size: 20px;
+    opacity: 0.5;
+    line-height: 60px;
+}
+.sidebar__item-1{
+    opacity: 1;
+}
+.sidebar__item-1 i{
+    color:#149DDD;
+}
+.footer{
+    position:fixed;
+    bottom: 20px;
+    left: 70px;
+}
+
+
+
+/*-------------------------------- container__about --------------------------------------*/
+.container__about{
+    margin: 20px 10px;
+}
+.title span{
+    color:#1d366c;
+}
+.title hr{
+    width: 70px;
+    background-color:#2494d2;
+    height: 3px;
+    border: none;
+    margin: 20px 0 ;
+}
+/*-------------------------------- personal-information --------------------------------------*/
+.information{
+    margin-top: 30px;
+    display: grid;  
+    grid-template-columns: 30% 70%;
+
+
+}
+.information img{
+    width: 300px;
+}
+.information .ava{
+    display: flex;
+    justify-content: center;
+}
+.occupation{
+    text-transform: capitalize;
+    color:#1d366c;
+}
+.personal-information p{
+    margin: 20px 0;
+}
+.information__item span{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.information__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 40px;
+}
+.information__item{
+    display: flex;
+    align-items: center;
+}
+.bx-chevron-right{
+    font-size: 30px;
+    color: #5d8ca0;
+
+}
+/*-------------------------------- facts --------------------------------------*/
+
+.facts{
+    background-color: #f5f8fd;
+    padding: 20px 10px;
+}
+.fact__list{
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 100px;
+}
+.fact__item{
+    display: flex;
+    align-items: flex-start;
+}
+.fact__item i{
+    font-size: 50px;
+    color: #149DDD;
+    margin-right: 20px;
+}
+
+.number span{
+    font-weight: bold;
+}
+.number span:first-child{
+    font-size: 50px;
+    display: block;
+}
+
+/*-------------------------------- resume --------------------------------------*/
+
+.resume{
+    padding: 20px 10px;
+}
+.resume p{
+    margin: 20px 0 40px 0;
+}
+.resume__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,40%);
+}
+.resume__list h1{
+    text-transform: capitalize;
+}
+
+.resume__item li:first-child{
+    text-transform: uppercase  ;
+    font-weight: bold;
+    font-size: 22px;
+}
+.resume__item ul{
+    line-height: 40px;
+}
+.experience__list-1{
+    margin-bottom: 20px;
+}
+.year{
+    background-color: #e4edf9;
+    display: inline-block;
+    padding: 3px 20px;
+}
+.fa-circle{
+    font-size: 7px;
+    position: relative;
+    bottom: 2px;
+}
+.border{
+    border-left: 3px solid #3b5a9c;
+    display: block;
+    padding-left: 20px;
+}
+.border li:first-child{
+    font-weight: normal;
+    font-size: 15px;
+}
+.first-child{
+    padding: 20px 0 0 20px;
+}
+/*-------------------------------- contact --------------------------------------*/
+.contact{
+    padding: 20px 10px;
+}
+.contact-form{
+    padding: 40px 30px;
+}
+.contact__area{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 30px;
+}
+.contact__list{
+    display: flex;
+    align-items:center;
+    margin-bottom: 30px;
+}
+.item__infor span{
+    display: block;
+}
+.item__infor span:first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+.bi{
+    font-size: 20px;
+    background-color: #def3fc;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    color:#55a3bf;
+}
+
+/*-------------------------------- form --------------------------------------*/
+.sign-form{
+    padding: 40px 30px;
+    line-height: 50px;
+}
+label{
+    display: block;
+}
+input {
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    width: 100%;
+    padding-left: 20px;
+}
+.name-email{
+   display: flex;
+   column-gap: 20px;
+}
+.name-email span{
+    flex:1
+}
+textarea{
+    width: 100%;
+    padding: 20px;
+}
+.contact-form,.sign-form{
+    box-shadow: 4px -4px 30px 2px rgba(160, 155, 155, 0.167);
+}
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 15px 25px;
+    background-color: #1599de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #1b7eb4;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RUNCHTY hotels & resorts</title>
+    <link rel="shortcut icon" type="images/png" href="images/hotellogo2.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='form.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="login.html"><img src="images/hotellogo2.png" alt=""></a>
+        <h1><a href="login.html">RUNCHTY <span>hotels & resorts</span></a></h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box">
+                <h2>Please Waiting</h2>
+                <form action="">
+                    <p style="font-size: 16px; color: brown;">An OTP has been sent to your email address.<br>
+                        Please check and enter the OTP in the area specified below.</p>
+                    <div class="field">
+                        <i class="bi bi-check-all"></i>
+                        <input type="text" id="otp" placeholder="OTP..." required>
+                    </div>
+                    <input class="submit-btn otp-btn" type="submit" value="Next">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+    <script>
+        var urlParams = new URLSearchParams(window.location.search);
+        var code = urlParams.get('code');
+        let OtpBtn = document.querySelector('.otp-btn');
+        OtpBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            var otpField = document.getElementById('otp').value;
+            if (otpField == "") {
+                alert("Please enter OTP code!");
+                return false;
+            }
+            else if (isNaN(otpField) || otpField.length !== 6) {
+                alert("OTP code consists of 6 characters!");
+                return false;
+            }
+            else {
+                if (otpField == code)
+                    window.location.href = "password.html";
+                else {
+                    alert('Wrong OTP code!');
+                    return false;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

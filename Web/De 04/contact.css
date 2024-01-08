@@ -1,0 +1,76 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+    max-height: 1000px;
+    align-items: center;
+    background: linear-gradient(144deg, #0f1110 40%, #e06ab6, #fba74a);
+}
+.contact-info{
+    color: #fff;
+    max-width: 700px;
+    line-height: 65px;
+    padding: 150px;
+    font-size: 20px;
+    background: url(images/bg-foot.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-form form{
+    background: linear-gradient(144deg, #0f1110, #e06ab6, #fba74a);
+    min-height: 400px;
+}
+.contact-form h2{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+.contact-info, .contact-form{
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form .text-box{
+    padding: 8px 100px 8px 8px;
+    margin-bottom: 10px;
+}
+.contact-form .send-btn{
+    float: right;
+    background: linear-gradient(144deg, #ff8800, #ff00a6);
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+.contact-form .send-btn:hover{
+    animation: animateBg 5s linear infinite;
+}

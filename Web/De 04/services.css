@@ -1,0 +1,53 @@
+.services{
+    display: flex;
+    justify-content: space-between;
+    min-height: 800px;
+    max-height: 1000px;
+    align-items: center;
+    /* background: linear-gradient(72deg, #2a98ff, #7360f0, #ff4089, #bc0bae); */
+    background: url(images/bg-ser.jpg) no-repeat;
+}
+.card{
+    color: #fff;
+    background-color: aliceblue;
+    min-height: 280px;
+    min-width: 600px;
+    margin: 30px 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+    line-height: 40px;
+}
+.card h1{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.card a{
+    background-color: #333;
+    padding: 15px 40px;
+    margin-top: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.card:hover{
+    animation: animateBg 5s linear infinite;
+}
+.card a:hover{
+    background-color: #33333391;
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

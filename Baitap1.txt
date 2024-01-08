@@ -1,0 +1,25 @@
+tạo file có thể dựa vào trang này để tạo nhanh hơn
+https://generatedata.com/generator
+
+Nội dung file VD : 
+ID,Name,Birth,Note,Sort1,Sort2
+AAA001,Name01,2000/01/01,,1,1
+
+1. Viết chương trình :
+	1. Input file path 
+	2. kiểm tra định dạng txt, file tồn tại
+		-> trường hợp lỗi, thông báo nhập lại
+	3. Nhập mã số sinh viên
+		danh sách đúng format : 6 ký tự, 3 ký tự đầu là alphabet
+	4. Tìm mã số sinh viên ( search like ) trong file danh sách sinh viên không phân biệt chữ hoa thường
+	5. nếu tồn tại : Xuất thông tin sinh viên
+	6. nếu không tồn tại yêu cầu nhập thông tin sinh viên và lưu vào file
+	
+2. Viết chương trình :
+	1. đọc nội dung file danh sách sinh viên
+	2. Sort danh sách tăng dần theo độ ưu tiên Sort1, Sort2 ( Note ! trường hợp sort1 Emtpy đặt vị trí cuối cùng và sort theo sort2 )
+	3. xuất danh sách ra 1 file mới
+
+3. Nhập số tiền vay và số năm trả góp
+	tính lãi xuất từng tháng phải trả và dư nợ còn lại Biết lãi suất 8%/năm ( lãi suất tính dựa trên dư nợ còn )
+	
